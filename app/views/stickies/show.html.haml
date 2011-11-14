@@ -1,0 +1,8 @@
+-if notice
+   .box{:id=>:notice}
+      = notice
+
+.box{:id=>:text}
+   = @sticky.text
+   %ul{:id=>:nav}
+      %li #{ link_to 'Edit', edit_sticky_path(@sticky) } | #{ link_to 'Back', stickies_path} 

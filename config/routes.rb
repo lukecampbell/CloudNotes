@@ -1,4 +1,7 @@
 Memo::Application.routes.draw do
+  match '/pages', :to=>'pages#index'
+  resources :stickies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
