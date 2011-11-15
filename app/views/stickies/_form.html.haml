@@ -7,8 +7,6 @@
                %li= msg
    .box
       .field
-         = f.label :text
-         %br
-         = f.text_area :text
+         = f.text_area :text, :cols=>28, :rows=>4
       .actions
-         = f.submit
+         = f.submit :value=>"Stick It"

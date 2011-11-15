@@ -2,7 +2,7 @@ class StickiesController < ApplicationController
   # GET /stickies
   # GET /stickies.json
   def index
-    @stickies = Sticky.all
+     @stickies = Sticky.all(:order=>"updated_at DESC", :limit=>"10")
 
     respond_to do |format|
       format.html # index.html.erb

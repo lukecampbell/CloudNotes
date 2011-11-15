@@ -1,8 +1,8 @@
   body, html {
-    background-color: #1C1C1C;
+    background-color: #FFF;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 13px;
-    color: #CCC; 
+    color: #000; 
   }
   table{
     padding: 5px;
@@ -20,46 +20,29 @@
     border: none;
   }
   .box{
-    background: #333;
+    background: #FFF71C;
     margin: 1em auto 0 auto;
-    width: 750px;
+    width: 250px;
     padding: 0.2em 2em;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
     border: 1px solid #666;
-    color: #FFF;
+    color: #000;
   }
   .button {
       background: #444;
       margin: 1em auto 0 auto;
       padding: 0.2em 2em;
-      -moz-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      border-radius: 8px;
+      -moz-border-radius: 2px;
+      -khtml-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
       border: 1px solid #666;
       color: #FFF;
    }
 
-.menu a {float:left; color:#eee; text-decoration:none; width:120px; height:28px; padding-top:8px}
-.menu span {float:left; color:#eee; text-decoration:none; width:120px; height:28px; padding-top:8px}
-.menu a:hover {color:#fff}
-.menu {list-style:none; font:16px Arial,Verdana; text-align:center; width:600px; margin:0 auto}
-.menu li {position:relative; float:left; width:120px; z-index:1000}
-.menu ul {display:none; position:absolute; font:normal 13px Arial,Verdana; top:36px; left:0; background:#aaa; display:none; list-style:none}
-.menu ul li {float:none; border-top:1px solid #ccc; width:120px}
-.menu ul li a, li.menuhover li a, li.menuhover li.menuhover li a {float:none; display:block; background:none; height:22px; padding-top:5px}
-.menu ul li a:hover, li.menuhover li a:hover, li.menuhover li.menuhover li a:hover {background:#999; color:#fff}
-.menu ul li span, li.menuhover li span, li.menuhover li.menuhover li span {float:none; display:block; background:none; height:22px; padding-top:5px}
-.menu ul ul {left:120px; top:0}
-.menu li.submenu {font-weight:bold}
-.menu li.noborder {border-top:none}
-li.menuhover a, li.menuhover li.menuhover a {color:#fff; background:#999}
-li.menuhover span, li.menuhover li.menuhover span {color:#fff; background:#999}
-#info {width:180px; background:#eee}
-#info li {width:160px; border-top:none; padding:8px 10px; color:#666; text-shadow:1px 1px #fff; text-align:left}
   .error, .fail{
     color: #ff0000;
   }
@@ -76,11 +59,18 @@ li.menuhover span, li.menuhover li.menuhover span {color:#fff; background:#999}
     border-style: solid;
   }
   a{
-    color: #FFF;
+    color: #B87C39;
     text-decoration: none;
   }
   a:hover {
-    color: #CCC;
+    color: #000;
+    font-weight:bold;
+  }
+  hr {
+   color: #000;
+   background-color: #000;
+   height: 1px;  
+   border: 0;
   }
   h1, h2 {
     margin-top: 5px;
@@ -95,7 +85,7 @@ li.menuhover span, li.menuhover li.menuhover span {color:#fff; background:#999}
     font-size: 70%;
   }
   h1 {
-    color: #FFF;
+    color: #000;
     font-size: 18px;
     padding-bottom: 7px;
   }
