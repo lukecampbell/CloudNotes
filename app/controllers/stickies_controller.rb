@@ -13,7 +13,12 @@ class StickiesController < ApplicationController
   # GET /stickies/1
   # GET /stickies/1.json
   def show
-   redirect_to :action=>:index
+   @sticky = Sticky.find(params[:id])
+   respond_to do |format|
+      format.html { redirect_to :action=>:index }
+      format.json { render json: @sticky }
+   end
+
   end
 
   # GET /stickies/new
