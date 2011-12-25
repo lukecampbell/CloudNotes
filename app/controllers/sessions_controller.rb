@@ -4,7 +4,8 @@ class SessionsController < ApplicationController
   def create
      user = login(params[:email], params[:password], params[:remember_me])
      if user
-        redirect_to :controller=>:stickies, :action=>:index, :notice=>"Signed In!"
+        flash[:notice] = "Signed In!"
+        redirect_to :controller=>:stickies, :action=>:index
 
      else
         flash.now.alert = "Email or password was invalid"
@@ -13,7 +14,8 @@ class SessionsController < ApplicationController
   end
   def destroy
      logout
-     redirect_to :controller=>:stickies, :action=>:index, :notice=>"User Deleted"
+     flash[:notice] = "Signed Out."
+     redirect_to :controller=>:stickies, :action=>:index
 
   end
 

@@ -4,6 +4,7 @@ gem 'rails', '3.1.1'
 gem 'gravatar_image_tag'
 gem 'haml'
 gem 'sorcery'
+gem 'best_in_place'
 
 
 # Bundle edge Rails instead:

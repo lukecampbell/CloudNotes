@@ -1,17 +1,25 @@
+
+
+
+<div align="center" class="login_box">
 <%= form_tag sessions_path do %>
-   <div class="field">
-      <%= label_tag :email %>
-      <%= text_field_tag :email, params[:email] %>
-   </div>
-   <div class="field">
-      <%= label_tag :password %>
-      <%= password_field_tag :password %>
-   </div>
-   <div class="field">
-      <%= check_box_tag :remember_me, 1, params[:remember_me] %>
-      <%= label_tag :remember_me %>
+   <div class="fields">
+      <table width="25%">
+         <tr>
+            <td><%= label_tag :email %></td>
+            <td><%= text_field_tag :email, params[:email] %></td>
+         </tr>
+         <tr>
+            <td><%= label_tag :password %></td>
+            <td><%= password_field_tag :password %></td>
+         </tr>
+         <tr>
+            <td><%= check_box_tag :remember_me, 1, params[:remember_me] %>  <%= label_tag :remember_me %></td>
+         </tr>
+      </table>
    </div>
    <div class="actions">
       <%= submit_tag "Log in" %>
    </div>
 <% end %>
+</div>

@@ -1,8 +1,7 @@
 - @stickies.each do |sticky|
    .box
-      = sticky.text
-      %ul{:id=>:nav}
-         %li #{ link_to 'Edit', edit_sticky_path(sticky)} | #{link_to 'Destroy', sticky, confirm: 'Are you sure?', method: :delete}
-
+      = best_in_place sticky, :text
+      .close{:align=>:right}
+         = link_to 'X', sticky, :confirm=>"Are you sure?", :method=>:delete
 .box{:align=>:right}
    = link_to 'New Sticky (Advanced)', new_sticky_path

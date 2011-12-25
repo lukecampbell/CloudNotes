@@ -143,6 +143,7 @@
        right: 100px;
        width: 250px;
        padding: 20px;
-       background-color: #FCC;
-       border: solid 2px #C66;
+       background-color: #000;
+       color: #FFF;
+       border: solid 2px #333;
      }

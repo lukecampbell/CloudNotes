@@ -3,11 +3,11 @@ class ApplicationController < ActionController::Base
   def not_authenticated
      redirect_to login_url, :alert=> "First login to access this page."
   end
-  def self.purr
-     message =' <div class="purr"> <h3> Hello </h3> </div>'
+  def self.purr(message)
+     msg =' <div class="purr"> <h3>' + message + '</h3> </div>'
      notice = <<END
      <script type="text/javascript">
-        var notice='#{message}';
+        var notice='#{msg}';
         $(notice).purr();
      </script>
 
